@@ -11,7 +11,7 @@ function Header() {
         <input
           type="text"
           placeholder="Search.."
-          className="tet-sm focus:outline-none active:outline-none h-10 w-[25rem] border pl-11 border-gray-300 rounded-lg px-4"
+          className="tet-sm focus:outline-none active:outline-none h-10 w-[25rem] border pl-11 border-gray-300 rounded-full px-4"
         />
       </div>
       <div>Side button</div>
