@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MainLayOut from './components/layouts/MainLayOut'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createHashRouter,RouterProvider } from 'react-router-dom'
 function App() {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <MainLayOut />,
