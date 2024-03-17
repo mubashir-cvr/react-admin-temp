@@ -62,6 +62,12 @@ function Header() {
         </div>
         <div className="hidden md:flex">Side button</div>
       </div>
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-black bg-opacity-50 md:hidden"
+          onClick={() => setSidebarOpen(false)}
+        ></div>
+      )}
 
       {/* Side bar  */}
       <div
@@ -115,7 +121,7 @@ function DashBoadrdLink({ item, closeSidebar }) {
       onClick={closeSidebar}
     >
       <span className="text-xl">{item.icon}</span>
-      {item.title}
+      <p className="text-s">{item.title}</p>
     </NavLink>
   );
 }
