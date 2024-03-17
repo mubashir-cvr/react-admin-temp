@@ -10,7 +10,7 @@ function MainLayOut() {
         <SideBar />
         <div className="flex-1 flex flex-col">
           <Header />
-          <div className="p-5 flex-1 flex flex-col">
+          <div className="p-2 md:p-5 flex-1 flex flex-col">
             <div className="flex flex-1 justify-center items-center rounded-lg bg-white">
               {<Outlet />}
             </div>
