@@ -11,7 +11,7 @@ const itemActiveClass = "flex gap-3 px-8 py-4 bg-gray-100";
 function SideBar() {
   return (
     <div className="hidden md:flex flex-col w-60 bg-white border-r-2">
-      <div className="flex items-center h-16 gap-2 px-3 py-4">
+      <div className="flex items-center border-b-2 h-16 gap-2 px-3 py-4">
         <FcBearish fontSize={24} />
         <p className="quantico-regular">RECSPERT</p>
       </div>

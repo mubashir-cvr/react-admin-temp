@@ -34,7 +34,7 @@ function Header() {
   }, [isOpen]);
   return (
     <>
-      <div className="bg-white h-14 md:h-16 border-l flex items-center gap-3 border-b-2">
+      <div className="bg-white h-14 md:h-16 flex items-center gap-3 border-b-2">
         <div className="md:hidden flex flex-row items-center w-full  h-14 gap-2 px-3 py-4">
           <div className="justify-start">
             <button onClick={() => setSidebarOpen(!isOpen)}>
