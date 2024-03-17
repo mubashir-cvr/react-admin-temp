@@ -34,8 +34,8 @@ function Header() {
   }, [isOpen]);
   return (
     <>
-      <div className="bg-white h-10 md:h-16 border-l flex items-center gap-3 border-b-2">
-        <div className="md:hidden flex flex-row items-center w-full  h-10 gap-2 px-3 py-4">
+      <div className="bg-white h-14 md:h-16 border-l flex items-center gap-3 border-b-2">
+        <div className="md:hidden flex flex-row items-center w-full  h-14 gap-2 px-3 py-4">
           <div className="justify-start">
             <button onClick={() => setSidebarOpen(!isOpen)}>
               <GiHamburgerMenu />
@@ -66,11 +66,11 @@ function Header() {
       {/* Side bar  */}
       <div
         ref={sidebarRef}
-        className={`fixed flex flex-col md:hidden shadow-gray-700 top-0 left-0 h-full bg-white z-40 transition-transform duration-300 ease-in-out ${
+        className={`fixed flex flex-col md:hidden border-x-2 shadow-gray-700 top-0 left-0 h-full bg-white z-40 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-end w-full h-10 gap-2 px-3 py-4">
+        <div className="flex items-center justify-end w-full h-12 border-b-2 gap-2 px-3 py-4">
           <div>
             <button onClick={() => setSidebarOpen(!isOpen)}>
               <GiHamburgerMenu />
