@@ -4,6 +4,8 @@ import { FcBearish } from "react-icons/fc";
 import { useState, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useEffect } from "react";
+import { VscBellDot } from "react-icons/vsc";
+import { RiWallet3Line } from "react-icons/ri";
 import {
   DASHBOARD_SIDEBAR,
   DASHBOARD_SIDEBAR_SEC,
@@ -47,7 +49,7 @@ function Header() {
           </div>
         </div>
         <div className="hidden md:flex px-4 flex-1">
-          <h1 className="outfit-bold fo">Good Morning</h1>
+          <h2 className="outfit-bold fo">Good Morning, <span className="font-light text-gray-600">Klara</span></h2>
         </div>
         <div className="relative hidden md:flex">
           <HiOutlineSearch
@@ -60,7 +62,24 @@ function Header() {
             className="tet-sm focus:outline-none active:outline-none h-10 w-[25rem] border pl-11 border-gray-300 rounded-full px-4"
           />
         </div>
-        <div className="hidden md:flex">Side button</div>
+        <div className="hidden md:flex h-full w-36">
+          <div className="flex flex-row w-full py-3 px-3">
+            <div className="flex text-sm items-center rounded-lg px-3 gap-2 text-white bg-pink-950 w-full h-full">
+                <p>+</p>
+                <p>Post a Need</p>
+            </div>
+
+          </div>
+        </div>
+        <div className="flex md:px-4">
+        <VscBellDot className="text-lg  text-pink-950"/>
+        </div>
+        <div className="flex md:px-4">
+        <RiWallet3Line className="text-lg text-pink-950"/>
+        </div>
+        <div className="flex p-2 md:px-4">
+        <img className="flex bg-white w-12 rounded-full md:h-12 border-2" src="src/assets/img/avatar.png"/>
+        </div>
       </div>
       {isOpen && (
         <div
@@ -86,7 +105,7 @@ function Header() {
         <div className="flex p-6">
           <div className="h-28 w-full flex flex-col items-center bg-green-800 bg-opacity-20 rounded-lg">
             <div className="flex-1 flex flex-row px-2 py-2 gap-2">
-              <img className="flex bg-white w-12 rounded-full h-12" src="src/assets/img/456322.webp"/>
+              <img className="flex bg-white w-12 rounded-full h-12" src="src/assets/img/avatar.png"/>
               <div className="flex-1 flex flex-col  justify-end">
                 <p className=" text-sm">Klara <span className=" text-gray-500">Siewert</span></p>
                 <p className="text-sm text-pink-950">customer</p>

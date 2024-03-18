@@ -19,7 +19,7 @@ function SideBar() {
         <div className="flex p-6">
           <div className="h-28 w-full flex flex-col items-center bg-green-800 bg-opacity-20 rounded-lg">
             <div className="flex-1 flex flex-row px-2 py-2 gap-2">
-              <img className="flex bg-white w-12 rounded-full h-12" src="src/assets/img/456322.webp"/>
+              <img className="flex bg-white w-12 rounded-full h-12" src="src/assets/img/avatar.png"/>
               <div className="flex-1 flex flex-col  justify-end">
                 <p className=" text-sm">Klara <span className=" text-gray-500">Siewert</span></p>
                 <p className="text-sm text-pink-950">customer</p>
