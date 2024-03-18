@@ -11,7 +11,7 @@ import {
   DASHBOARD_SIDEBAR_SEC,
 } from "../../lib/const/navigation";
 import { NavLink } from "react-router-dom";
-
+import avatar from  '../../../src/assets/img/avatar.png'
 const itemClass = "flex gap-3 px-8 py-4 hover:bg-gray-100";
 const itemActiveClass = "flex gap-3 px-8 py-4 bg-gray-100";
 function Header() {
@@ -78,7 +78,7 @@ function Header() {
         <RiWallet3Line className="text-lg text-pink-950"/>
         </div>
         <div className="flex p-2 md:px-4">
-        <img className="flex bg-white w-12 rounded-full md:h-12 border-2" src="src/assets/img/avatar.png"/>
+        <img className="flex bg-white w-12 rounded-full md:h-12 border-2" src={avatar}/>
         </div>
       </div>
       {isOpen && (

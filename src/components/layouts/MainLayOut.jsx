@@ -6,14 +6,12 @@ import Header from "../shared/Header";
 function MainLayOut() {
   return (
     <div className="flex flex-col h-screen w-screen">
-      <div className="flex flex-row bg-neutral-100 h-screen w-screen overflow-hidden">
+      <div className="flex flex-row h-screen w-screen overflow-hidden">
         <SideBar />
         <div className="flex-1 flex flex-col">
           <Header />
-          <div className="p-2 md:p-4 flex-1 flex flex-col">
-            <div className="flex flex-1 justify-center items-center rounded-lg bg-white">
+          <div className="p-2 md:p-4 overflow-scroll no-scrollbar flex-1 flex flex-col">
               {<Outlet />}
-            </div>
           </div>
         </div>
       </div>

@@ -5,13 +5,14 @@ import { CgNotes } from "react-icons/cg";
 import { RiRadioLine } from "react-icons/ri";
 import { RxCalendar } from "react-icons/rx";
 import { BiSupport } from "react-icons/bi";
+import HomePage from "../../components/pages/HomePage";
 export const DASHBOARD_SIDEBAR =[
     {
         key:1,
         title:"Home",
         to:"",
         icon:<BiHomeSmile color="rgb(80 7 36)"/>,
-        element:<h3>Home</h3>
+        element:<HomePage/>
     },
     {
         key:2,
