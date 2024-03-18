@@ -16,6 +16,26 @@ function SideBar() {
         <p className="quantico-regular">RECSPERT</p>
       </div>
       <div className="overflow-auto no-scrollbar flex-1 flex flex-col">
+        <div className="flex p-6">
+          <div className="h-28 w-full flex flex-col items-center bg-green-800 bg-opacity-20 rounded-lg">
+            <div className="flex-1 flex flex-row px-2 py-2 gap-2">
+              <img className="flex bg-white w-12 rounded-full h-12" src="src/assets/img/456322.webp"/>
+              <div className="flex-1 flex flex-col  justify-end">
+                <p className=" text-sm">Klara <span className=" text-gray-500">Siewert</span></p>
+                <p className="text-sm text-pink-950">customer</p>
+              </div>
+            </div>
+            <div className="flex flex-row w-full py-2 px-2">
+              <div className="flex flex-row px-2 gap-2 items-center bg-green-900 bg-opacity-20 h-8 rounded-lg w-full">
+                <p className="text-sm font-light flex-1">Credit Balance</p>
+                <p className="flex font-medium text-pink-950">20</p>
+                <div className="flex justify-center bg-opacity-70 rounded-lg bg-pink-950 w-6">
+                  <p className=" text-white font-light">+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="gap-2 pb-3">
           {DASHBOARD_SIDEBAR.map((item) => (
             <DashBoadrdLink key={item.key} item={item} />
