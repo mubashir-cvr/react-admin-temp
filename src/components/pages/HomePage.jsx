@@ -4,7 +4,7 @@ import avatar from "../../../src/assets/img/avatar.png";
 import dance from "../../../src/assets/img/dance-m.jpeg";
 function HomePage() {
   return (
-    <div className="h-screen">
+    <div className="flex-1">
     <div className="flex flex-row items-center h-full w-full">
       <div className="flex basis-full md:basis-3/4 h-full w-full px-2">
         <Carousel items={toCarousalItems} />
